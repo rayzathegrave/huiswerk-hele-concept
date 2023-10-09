@@ -1,0 +1,680 @@
+
+/*Table of Contents*/
+/*1.    Global Styles*/
+/*2.    Typography*/
+/*3.    Layout*/
+/*3.1   Reusables*/
+/*3.2   Other*/
+/*4.    Areas*/
+/*4.1   Header*/
+/*4.2   USP`s*/
+/*4.3   Quote*/
+/*5.    Media Queries*/
+
+
+/*1.    Global Styles*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --paars: #5722CD;
+    --blauw: #4845E;
+    --roze: #ED4385;
+    --zwart: #0C0C0C;
+    --lichtpaars: #F2F0FF;
+    --lichtgrijs: #F3F6F9;
+    --grijs: #7A7A7A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/*---------------Typography start---------------*/
+
+h1 {font-family: 'Merriweather', serif;}
+h2 {font-family: 'Merriweather', serif;}
+h3 {font-family: 'Merriweather', serif;}
+p {font-family: 'Roboto', sans-serif;}
+li {font-family: 'Roboto', sans-serif;}
+label{font-family: 'Roboto', sans-serif;}
+button {font-family: 'Roboto', sans-serif;}
+
+
+nav ul li {
+    font-size: 1.3em;
+}
+
+header h1 {
+    font-size: 2.9em;
+}
+
+header p {
+    margin: 2px 0 0 0;
+    font-size: 1.7em;
+}
+
+header button {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+
+
+
+/*--introduction text start--*/
+.purpleH2Text {
+    font-size: 1.30em;
+    color: var(--paars);
+}
+
+section h2 {
+    line-height: 1.6em;
+}
+
+main .insideInnerContainerIntroduction p {
+    font-weight: 500;
+    color: black;
+}
+
+/*--introduction text end--*/
+/*--Article Rollingstone start--*/
+
+
+.GreyBackground h2{
+    font-size: 2em;
+}
+
+.GreyBackground p{
+    font-size: 1.25em;
+}
+
+.linkRollingstonePurple {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--paars);
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+/*--Article Rollingstone end--*/
+
+
+main .brandingOuterSection h2{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--paars);
+}
+
+main .brandingOuterSection p{
+    margin: 2px 0 0 0;
+    font-size: 1em;
+    color: var(--grijs);
+}
+
+/*---------------Footer start---------------*/
+
+footer .footerPaars{
+    background: linear-gradient(90deg, rgba(72,69,224,1) 0%, rgba(87,34,205,1) 100%);
+    color: white
+}
+
+footer .footerPaars h1{
+    font-size: 3em;
+}
+
+/*---------------Footer end---------------*/
+
+
+/*---------------Typography end---------------*/
+/*3.    Layout*/
+
+
+
+body {
+    border: 2px solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*---------------Header start---------------*/
+/*---------------Header start---------------*/
+
+header {
+    background: linear-gradient(90deg, rgba(72,69,224,1) 0%, rgba(87,34,205,1) 100%);
+    color: white;
+}
+
+header .outerContainerHeader {
+    /*border: #9b1111 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 40px 0;
+
+
+}
+
+header .outerContainerNav {
+    /*border: 2px solid blue;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 2px;
+    margin: 15px 30px;
+
+
+}
+
+header .NavUlContainer {
+    /*border: 2px solid purple;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    flex-basis: 430px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+
+}
+
+header .outerContainerHeaderExtra {
+    /*border: orange 2px solid;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 30px ;
+}
+
+header .innerContainerHeader {
+    /*border: greenyellow 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    /*width: 50vw;*/
+    text-align: center;
+    flex-basis: 1200px;
+    padding: 100px 115px 125px 115px;
+
+
+
+}
+
+
+header button {
+    color: #ffffff;
+    background-color: var(--roze);
+    border-radius: 50px;
+    padding: 25px 40px;
+    cursor: pointer;
+    border: none;
+    -webkit-box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.25);
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.25);
+    width: fit-content;
+    align-self: center;
+}
+
+.imagecontainerTopImage{
+    /*border: 2px solid turquoise;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: -4vh 0 ;
+}
+
+img .topImage {
+    display: flex;
+    justify-content: center;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+
+/*---------------Header end---------------*/
+/*---------------Main start---------------*/
+
+main {
+    background-color: white;
+}
+
+/*-white section in main start-*/
+.outerContainerIntroduction {
+    /*border: deeppink 2px dashed;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.innerContainerIntroduction {
+    /*border: red 2px dashed;*/
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1200px;
+    height: 88vh; /*space between white/grey*/
+    width: 40em;
+}
+
+.insideInnerContainerIntroduction {
+    /*border: deeppink 2px dashed;*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 195px 110px 195px
+}
+
+
+
+/*-white section in main end-*/
+/*-light grey section in main start-*/
+
+main .GreyBackground {
+    background-color: var(--lichtgrijs);
+}
+
+/*-light grey section > Article Rolling stone start-*/
+
+
+.outerContainerImageRollingStoneArticle {
+    /*border: deeppink 2px dashed;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.innerContainerImageArticleRollingStone {
+    /*border: turquoise 2px dashed;*/
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.articleRollingStoneTextFlexbox1 {
+    /*border: red 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 90px 0 0 ;
+}
+
+.articleRollingStoneTextFlexbox2 {
+    /*border: blue 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 1.2em 2.3em 0  3.4em ;
+    margin: 218px 0 0 10px;
+    width: 500px;
+}
+
+
+
+main section .flexImageLaptop {
+    /*border: forestgreen 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 85px 20px 0 0;
+}
+
+.waveLineImage {
+    display: flex;
+    justify-content: center;
+    padding: 22px 0 0 0;
+    max-width: 60px;
+}
+
+
+.flexImageLaptop {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    -webkit-box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+    box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+}
+
+.ArticleImage {
+    width: 100%;
+
+}
+
+
+/*-light grey section > Article Rolling stone end-*/
+/*-light grey section > Variety start-*/
+
+
+.outerContainerImageVarietyArticle {
+    /*border: deeppink 2px dashed;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.innerContainerImageArticleVariety {
+    /*border: turquoise 2px dashed;*/
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.articleVarietyTextFlexbox1 {
+    /*border: red 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 90px 0 0 ;
+}
+
+.articleVarietyTextFlexbox2 {
+    /*border: blue 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 1.2em 0 0 8.25em ;
+    margin: 218px 0 0 0;
+    width: 500px;
+}
+
+main section .flexImageBook {
+    /*border: forestgreen 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 100px 20px 0 0;
+}
+
+.waveLineImage {
+    display: flex;
+    justify-content: center;
+    padding: 22px 0 0 0;
+    max-width: 60px;
+}
+
+
+.flexImageBook {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    -webkit-box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+    box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+}
+
+.ArticleImage {
+    width: 100%;
+
+}
+
+
+
+/*-light grey section > Variety end-*/
+/*-light grey section > Worth start-*/
+
+.outerContainerImageWorthArticle {
+    border: deeppink 2px dashed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 30px 230px 30px;
+
+}
+
+
+
+.innerContainerImageArticleWorth {
+    /*border: turquoise 2px dashed;*/
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+
+
+.articleWorthTextFlexbox1 {
+    /*border: red 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*padding: 30px 20px;*/
+    max-height: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 90px 0 0 ;
+}
+
+.articleWorthTextFlexbox2 {
+    /*border: blue 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 1.2em 2.3em 0  3.4em ;
+    margin: 218px 0 0 10px;
+    width: 500px;
+}
+
+
+
+main section .flexImagePaper {
+    /*border: forestgreen 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 85px 20px 0 0;
+    -webkit-box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+    box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+}
+
+.waveLineImage {
+    display: flex;
+    justify-content: center;
+    padding: 22px 0 0 0;
+    max-width: 60px;
+
+}
+
+
+.flexImagePaper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.ArticleImage {
+    width: 100%;
+
+}
+
+
+
+
+
+
+/*-light grey section > Worth end-*/
+/*-light grey section in main end-*/
+/*-White section in main start-*/
+
+main .brandingOuterSection {
+    background-color: white;
+}
+
+.brandingOuterSection {
+    border: deeppink 2px dashed;
+    flex-direction: column;
+    display: flex;
+}
+
+.brandingInnerSection {
+    border: green 2px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 80px 0;
+}
+
+
+.flexBlockWithIcon {
+    border: var(--paars) 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    max-width: 380px;
+    margin: 1.2em 1.3em 1em 1.3em;
+    padding: 50px 20px 75px 40px;
+}
+
+
+.articleImage {
+    display: flex;
+    /*justify-content: center;*/
+    /*padding: 22px 0 0 0;*/
+    max-width: 80px;
+}
+
+
+
+
+
+
+/*-White section in main end-*/
+/*main {*/
+/*    background-color: white;*/
+/*}*/
+
+
+
+
+/*---------------Main end---------------*/
+/*---------------Footer start---------------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+footer .footerPaars{
+    background: linear-gradient(90deg, rgba(72,69,224,1) 0%, rgba(87,34,205,1) 100%);
+}
+
+footer .footerPaars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*---------------Footer end---------------*/
+
+
+/*3.1   Reusables*/
+
+/*main {*/
+/*    background-color: white;*/
+/*}*/
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-group textarea {
+    height: 150px;
+    width: 850px;
+}
+
+.form-group input[type="Send"] {
+    background-color: var(--roze);
+    color: #fff;
+    border: none;
+    padding: 25px 20px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    margin: 0 0 40px 0;
+}
+
+.send-button{
+    text-align: center;
+}
+
+.blackbox{
+    display: flex;
+    flex-direction: row;
+    min-height: 45px;
+    background-color: #0C0C0C;
+    color: white;
+padding: 20px;
+    justify-content: center;
+}
+
+
+
+/*3.2   Other*/
+
+/*4.    Areas*/
+/*4.1   Header*/
+/*4.2   USP`s*/
+/*4.3   Quote*/
+
+
+
+/*5.    Media Queries*/
+
